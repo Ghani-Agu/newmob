@@ -1,0 +1,98 @@
+{
+  "brand": "newmob",
+  "hero": {
+    "mode": "slider",
+    "interval": 5,
+    "slides": [
+      {
+        "title": "Nova 12 Pro",
+        "text": "Titanium. Lighter than ever.",
+        "image": "/img/nova-12-pro.svg",
+        "cta": "Shop now",
+        "link": "#shop"
+      },
+      {
+        "title": "Buds Pro",
+        "text": "Pure sound, all day.",
+        "image": "/img/buds-pro.svg",
+        "cta": "Shop now",
+        "link": "#shop"
+      },
+      {
+        "title": "Watch S",
+        "text": "Your day, on your wrist.",
+        "image": "/img/watch-s.svg",
+        "cta": "Shop now",
+        "link": "#shop"
+      }
+    ],
+    "video": {
+      "src": "/video/hero.mp4",
+      "poster": "/video/hero-poster.jpg",
+      "title": "Nova 12",
+      "text": "Made to be seen.",
+      "cta": "Shop now",
+      "link": "#shop",
+      "textColor": "dark"
+    }
+  },
+  "products": [
+    {
+      "name": "Nova 12 Pro",
+      "category": "Phones",
+      "price": 999,
+      "image": "/img/nova-12-pro.svg",
+      "tag": "New"
+    },
+    {
+      "name": "Nova 12",
+      "category": "Phones",
+      "price": 799,
+      "image": "/img/nova-12.svg",
+      "tag": ""
+    },
+    {
+      "name": "Nova 12 Black",
+      "category": "Phones",
+      "price": 799,
+      "image": "/img/nova-12-black.svg",
+      "tag": ""
+    },
+    {
+      "name": "Lite 8",
+      "category": "Phones",
+      "price": 449,
+      "image": "/img/lite-8.svg",
+      "tag": "Sale"
+    },
+    {
+      "name": "Buds Pro",
+      "category": "Audio",
+      "price": 179,
+      "image": "/img/buds-pro.svg",
+      "tag": "New"
+    },
+    {
+      "name": "Watch S",
+      "category": "Watches",
+      "price": 299,
+      "image": "/img/watch-s.svg",
+      "tag": ""
+    },
+    {
+      "name": "Charger 65W",
+      "category": "Accessories",
+      "price": 39,
+      "image": "/img/charger-65w.svg",
+      "tag": ""
+    },
+    {
+      "name": "Power Bank 10K",
+      "category": "Accessories",
+      "price": 49,
+      "image": "/img/power-bank-10k.svg",
+      "tag": ""
+    }
+  ],
+  "currency": "$"
+}

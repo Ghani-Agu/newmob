@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>newmob</title>
+  <meta name="description" content="Phones, audio and accessories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="logo" id="logo">newmob</a>
+      <nav class="nav" id="nav" aria-label="Categories"></nav>
+      <button class="bag" id="bag" aria-label="Bag">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="bag__count" id="bag-count" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Featured"></section>
+
+    <section class="shop container" id="shop">
+      <div class="shop__head">
+        <h2 class="section-title">Shop</h2>
+        <div class="filters" id="filters" role="tablist"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span id="footer-brand">newmob</span>
+      <span class="muted">Free delivery · 2-year warranty</span>
+    </div>
+  </footer>
+
+  <dialog class="quick" id="quick">
+    <button class="quick__close" id="quick-close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="quick__media" id="quick-media"><img id="quick-img" alt=""></div>
+    <div class="quick__info">
+      <p class="muted" id="quick-cat"></p>
+      <h3 class="quick__name" id="quick-name"></h3>
+      <p class="quick__price" id="quick-price"></p>
+      <button class="btn" id="quick-add">Add to bag</button>
+    </div>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>

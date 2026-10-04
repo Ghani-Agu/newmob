@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Admin · newmob</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body class="admin">
+  <!-- Login -->
+  <section class="login" id="login">
+    <form class="login__box" id="login-form">
+      <h1 class="section-title">Admin</h1>
+      <input class="input" type="password" id="password" placeholder="Password" autocomplete="current-password" required>
+      <button class="btn" type="submit">Sign in</button>
+      <p class="error" id="login-error" hidden></p>
+    </form>
+  </section>
+
+  <!-- Editor -->
+  <div id="editor" hidden>
+    <header class="header is-scrolled">
+      <div class="container header__inner">
+        <span class="logo">Admin</span>
+        <div class="admin__actions">
+          <span class="status muted" id="status"></span>
+          <a class="btn btn--ghost" href="/" target="_blank" rel="noopener">View site</a>
+          <button class="btn" id="save">Save</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container admin__main">
+      <section class="panel">
+        <h2 class="panel__title">Hero</h2>
+        <div class="segmented" role="radiogroup" aria-label="Hero type">
+          <label><input type="radio" name="mode" value="slider"><span>Slider</span></label>
+          <label><input type="radio" name="mode" value="video"><span>Video</span></label>
+        </div>
+
+        <div id="slider-panel">
+          <label class="field field--inline">
+            <span>Seconds per slide</span>
+            <input class="input input--sm" type="number" min="2" max="30" id="interval">
+          </label>
+          <div class="list" id="slides"></div>
+          <button class="btn btn--ghost" id="add-slide">Add slide</button>
+        </div>
+
+        <div id="video-panel" hidden>
+          <div class="video-edit">
+            <div class="video-edit__preview"><video id="video-preview" muted loop playsinline autoplay></video></div>
+            <div class="fields" id="video-fields"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__title">Products</h2>
+        <div class="list" id="products"></div>
+        <button class="btn btn--ghost" id="add-product">Add product</button>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__title">General</h2>
+        <div class="fields fields--row" id="general"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
