@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "ghani-setup": {
+      "source": {
+        "source": "github",
+        "repo": "Ghani-Agu/claude-setup"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "ghani-standard@ghani-setup": true
+  }
+}
